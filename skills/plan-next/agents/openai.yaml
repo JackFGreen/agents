@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Next"
+  short_description: "Plan-aware next-step guidance"
+  default_prompt: "Use $plan-next to compare the current repo state with plans/ and decide the next concrete step."
