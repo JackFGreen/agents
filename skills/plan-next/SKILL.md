@@ -33,7 +33,7 @@ If the user asks for examples, asks to add missing planning docs, or the existin
 6. Keep document roles separated when persisting.
    - Schedule or timeline docs: original pacing, milestone reference
    - Roadmap docs: sequence, status, checkpoints, brief current focus
-   - Next-step docs: current assessment, one next step, concrete deliverables
+   - Current-action docs: current judgment, one immediate step, concrete task list, completion signals, and short implementation constraints when needed
    - If the active stage changes, update both files to stay consistent
 7. When a planning doc is missing or badly structured, normalize it with the closest template example from `references/doc-templates.md`.
    - Preserve repository-specific terminology
@@ -74,12 +74,20 @@ When answering "what should I do next", provide:
 1. Current assessment
 2. The single most important next step
 3. The concrete tasks to complete that step
+4. Completion criteria when the boundary is not obvious
 
 Keep the answer concise and action-oriented.
 
 When updating docs:
 
-- Keep the current-action doc terse and executable, more like a task sheet than a narrative
+- Keep the current-action doc terse and executable, more like an action sheet than a narrative
+- Prefer a structure that makes the immediate judgment explicit:
+  - current judgment or assessment
+  - one immediate next step
+  - concrete task list
+  - completion signals or exit criteria
+  - short code constraints or implementation notes only when they reduce execution ambiguity
+- Use headings that match the repository language and conventions; do not force English labels when the planning docs are written in another language
 - Keep schedule or timeline docs as reference material unless the user explicitly asks to replan them
 - Keep roadmap docs concise and roadmap-oriented; compress already-completed milestones
 - Keep design docs aspirational; do not rewrite them to mirror transient implementation state unless the user asks
@@ -99,6 +107,7 @@ When writing the recommendation back into the repo:
 - If a new planning document is added, update plan indexes when they exist
 - If a new planning document needs to be created, start from the corresponding template in `references/doc-templates.md` and then fill in repository evidence
 - Prefer targeted edits over wholesale replacement when the existing doc already has useful structure
+- When the repo already uses a richer current-action shape, preserve it if it still serves the same role. Common useful sections include current judgment, task list, completion markers, and implementation notes
 - If no current-action doc exists, create one before creating broader planning docs unless the user asked for a different artifact first
 
 ## Scope Inference
@@ -118,7 +127,7 @@ If the repo has a documented primary workspace, prioritize it. If not, use the a
 Infer document role by content and responsibility, not filename alone:
 
 - A roadmap doc usually tracks phases, milestones, status, or execution order
-- A current-action doc usually contains one immediate task with deliverables
+- A current-action doc usually contains one immediate task plus the evidence, task list, and completion markers needed to execute it without rereading the whole plan set
 - A schedule doc usually contains dates, weeks, checkpoints, or pacing
 - A long-horizon plan doc usually describes target capabilities and end state
 - A design doc usually explains architecture, constraints, and module shape

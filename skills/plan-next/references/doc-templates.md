@@ -123,7 +123,7 @@ Goal: Describe the next milestone briefly.
 
 ## Current-Action Doc
 
-Use for the single current recommendation. Keep it executable and short.
+Use for the single current recommendation. Keep it executable and short. Favor a compact action sheet that explains why this is the current priority, what to do now, and how to know the step is done.
 
 ### Example Path
 
@@ -136,24 +136,32 @@ Use for the single current recommendation. Keep it executable and short.
 
 ## Current Assessment
 
-- State the current milestone or focus
-- State the key implementation evidence
-- State the most important gap
+- State the current milestone, stage, or focus
+- State the key implementation evidence that supports this judgment
+- State the most important remaining gap
 
-## Next Step
+## Task
 
 Describe one concrete step to execute now.
 
-## Deliverables
+## Tasks
 
-- File or module change
-- Validation command
-- Any short constraint or boundary
+1. File or module change
+2. Validation command
+3. Any other concrete subtask required to finish the step
 
-## One-Line Conclusion
+## Done When
 
-Summarize the action in one sentence.
+- Observable condition that marks the step complete
+- Validation result that should pass
+
+## Implementation Notes
+
+- Keep only short constraints, boundaries, or code-shape guidance that reduce ambiguity
+- Omit this section when it does not help execution
 ```
+
+The document may use equivalent headings such as `Current Judgment`, `Next Step`, `Task List`, `Completion Criteria`, or repository-local language such as `当前判断`, `任务清单`, `完成标志`, and `代码建议`.
 
 ## Schedule Doc
 
