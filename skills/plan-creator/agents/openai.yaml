@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Creator"
+  short_description: "Create planning docs by role"
+  default_prompt: "Use $plan-creator to create or normalize this repo's planning docs by document role."
