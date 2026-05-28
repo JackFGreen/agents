@@ -81,7 +81,7 @@ Keep the answer concise and action-oriented.
 When updating docs:
 
 - Keep the current-action doc terse and executable, more like an action sheet than a narrative
-- Add an implementation-steps section by default when updating a current-action doc. Keep it scoped to the current next step: directory split, minimal interface or function sketches when useful, and focused test cases. Treat it as an execution supplement, not the full plan.
+- Add a section for implementation steps by default when updating a current-action doc. Name the section according to the repository's planning-doc language and heading conventions. Keep it scoped to the current next step: directory split, minimal interface or function sketches when useful, and focused test cases. Treat it as an execution supplement, not the full plan.
 - Prefer a structure that makes the immediate judgment explicit:
   - current judgment or assessment
   - one immediate next step
